@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Checkbox, IconButton } from '@mui/material';
 import { pink } from '@mui/material/colors'
+import { Link } from 'react-router-dom';
 import React from 'react'
 
 export default function ForgotP() {
@@ -34,8 +35,8 @@ export default function ForgotP() {
 
         <div className='mt-1 text-center '>
             Go Back. 
-             <button className='pl-1 underline'> LOGIN
-              </button>
+            <Link to={"/LogIn"} className='pl-1 underline'> LOGIN
+              </Link>
         </div>
         </div>
     </div>

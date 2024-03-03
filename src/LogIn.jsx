@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Checkbox, IconButton } from '@mui/material';
 import { pink } from '@mui/material/colors';
+import { Link } from 'react-router-dom';
 export default function LogIn() {
   return (
 
@@ -39,9 +40,9 @@ export default function LogIn() {
             </button>
         </div>
         <div className='flex justify-end'>
-          <button className='mt-1 text-gray-400'>
+          <Link to={"/ForgotP"} className='mt-1 text-gray-400'>
              Forgot Password?
-        </button></div>
+        </Link></div>
         <hr className='mt-2 mb-4 border-1'></hr>
 
         <div className=' flex justify-center gap-3 '>
@@ -51,8 +52,8 @@ export default function LogIn() {
         </div>
         <div className='mt-1 text-center '>
              Need an account? 
-             <button className='pl-1 underline'> SIGN UP
-              </button>
+             <Link to={"/Singup"} className='pl-1 underline'> SIGN UP
+              </Link>
         </div>
         </div>
     </div>

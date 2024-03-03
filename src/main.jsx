@@ -1,14 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import LogIn from './LogIn.jsx'
+import Singup from './Singup.jsx'
 import './index.css'
-import ForgotP from './ForgotP.jsx'
+import { createRoot } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <BrowserRouter>
+    <App />
+    {
 
-    <ForgotP />
+    }
+  </BrowserRouter>
   </React.StrictMode>,
 )
 
