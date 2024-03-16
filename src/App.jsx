@@ -1,8 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
 import Singup from './components/Singup'
-import { Login } from '@mui/icons-material'
-import ForgotP from './ForgotP'
+import ForgotP from './components/ForgotP'
 import Home from './components/Home'
 import LogIn from './components/LogIn'
 import Figma from './components/Ccl3'
@@ -16,6 +15,7 @@ export default function App() {
         <Route path="/LogIn" index element={< LogIn/> }/> 
         <Route path="/ForgotP" element={< ForgotP/> }/> 
         <Route path="/Figma" element={< Ccl3/> }/> 
+        <Route path="/Home" element={< Home/> }/> 
 
       </Routes>
 

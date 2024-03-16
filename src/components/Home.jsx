@@ -9,24 +9,23 @@ import g4 from '../assets/CCL images/g4.png'
 import g5 from '../assets/CCL images/g5.png' 
 import g6 from '../assets/CCL images/g6.png' 
 import StarIcon from '@mui/icons-material/Star';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 import { pink, yellow } from '@mui/material/colors'
 import Navbar from './Navbar'
 
 import Contact from './Contact'
+import Footer from './Footer'
 export default function Home() {
 
 
   return (
     <>
-    <body className=''>
+
 
        <Navbar />
-
+{/* OUR WORK */}
        <div className='text-white self-center'  >
         <img src={cclbg1} className=" h-[720px] w-full relative top-0 brightness-[0.25]  " />
         
@@ -240,31 +239,9 @@ export default function Home() {
 
 
           
-          <div className='flex flex-row gap-5 mt-10'> 
-              <div> 
-                <Contact />
-              </div>
-
-              <div>
-                  <div className='flex flex-row bg-black gap-10 p-5'> 
-                      <FacebookIcon sx={{ color: 'white' }} />
-                      <TwitterIcon sx={{ color: 'white' }} />
-                      <LinkedInIcon sx={{ color: 'white' }} />
-                  </div>
-
-    
-                  <div className='flex flex-col'> 
-                    <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                    <h3> +00 123 456 78 </h3>
-                    <h3> constractioninc@gmail.com </h3>
-                  </div>
-
-              </div>
-          </div>
-
+         
             
-          
-              </body>
+          <Footer/>          
     </>
   )
 }
