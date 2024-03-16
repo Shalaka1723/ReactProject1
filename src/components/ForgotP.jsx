@@ -7,6 +7,7 @@ import { pink } from '@mui/material/colors'
 import { Link } from 'react-router-dom';
 import React from 'react'
 
+
 export default function ForgotP() {
   return (
     <> 
@@ -35,7 +36,7 @@ export default function ForgotP() {
 
         <div className='mt-1 text-center '>
             Go Back. 
-            <Link to={"/LogIn"} className='pl-1 underline'> LOGIN
+            <Link to={"/"} className='pl-1 underline'> LOGIN
               </Link>
         </div>
         </div>
