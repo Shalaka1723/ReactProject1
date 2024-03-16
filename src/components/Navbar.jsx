@@ -24,7 +24,7 @@ export default function Navbar() {
                   <Link to={"/LogIn"} className='rounded-3xl bg-gray-300 text-black shadow border-gray-300 border-2 p-2 pt-1 '> Log In 
                   </Link> </li>
                 <li className='pr-4 text-sm'>
-                  <Link to={"/SignUp"} className='rounded-3xl bg-gray-800 text-white shadow border-gray-800 border-2 p-2 pt-1 '> Sign Up 
+                  <Link to={"/Singup"} className='rounded-3xl bg-gray-800 text-white shadow border-gray-800 border-2 p-2 pt-1 '> Sign Up 
                   </Link> </li>
                 <li> <ShoppingCartIcon/> </li>
               </ul>

@@ -1,18 +1,23 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Singup from './Singup'
-import LogIn from './LogIn'
-import ForgotP from './ForgotP'
+import Singup from './components/Singup'
+import LogIn from './components/LogIn'
+import ForgotP from './components/ForgotP'
+import Ccl3 from './components/Ccl3'
 import Home from './components/Home'
+
+
 
 export default function App() {
   return (
     <>
     <Routes>
       <Route path='/Singup' element={<Singup/>} />
-      <Route path='/' index element={<Home/>} />
+      <Route path='/' element={<Home/>} />
       <Route path='/ForgotP' element={<ForgotP/>} />
-      <Route path='/LogIn' element={<LogIn/>} />
+      <Route path='/LogIn' index element={<LogIn/>} />
+
+      <Route path="/Ccl3" element={< Ccl3/> }/> 
 
     </Routes> 
     </>
