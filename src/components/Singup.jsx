@@ -26,7 +26,7 @@ export default function Singup() {
           </div>
           <div className='flex justify-between mt-1 text-center text-blue-800 '>
               <p>Already have an account? </p>
-              <Link to={"/Login"} className='pl-1 text-pink-700'>Login</Link>
+              <Link to={"/"} className='pl-1 text-pink-700'>Login</Link>
           </div>
           <div className=' flex justify-center gap-3 mt-2'>
           <GoogleIcon  sx={{ color: pink[600] }} />

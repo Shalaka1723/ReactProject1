@@ -35,9 +35,10 @@ export default function LogIn() {
               
         </div>
         <div className='mt-3'>
-            <button className='drop-shadow-lg mt-1 p-2 bg-pink-500 text-white w-full rounded-xl border-pink-700'>
+          
+            <Link to={"/Figma"} className='drop-shadow-lg mt-1 p-2 bg-pink-500 text-white w-full rounded-xl border-pink-700'>
                 LOGIN
-            </button>
+            </Link>
         </div>
         <div className='flex justify-end'>
           <Link to={"/ForgotP"} className='mt-1 text-gray-400'>
@@ -53,6 +54,7 @@ export default function LogIn() {
         <div className='mt-1 text-center '>
              Need an account? 
              <Link to={"/Singup"}>Singup</Link>
+             
         </div>
         </div>
     </div>

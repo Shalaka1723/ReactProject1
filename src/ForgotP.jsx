@@ -35,7 +35,7 @@ export default function ForgotP() {
 
         <div className='mt-1 text-center '>
             Go Back. 
-            <Link to={"/Login"} className='pl-1 text-pink-700'>Login</Link>
+            <Link to={"/"} className='pl-1 text-pink-700'>Login</Link>
         </div>
         </div>
     </div>
