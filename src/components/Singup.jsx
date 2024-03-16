@@ -28,7 +28,7 @@ export default function Singup() {
               <p>Already have an account? </p>
               <Link to={"/"} className='pl-1 text-pink-700'>Login</Link>
           </div>
-          <div className=' flex justify-center gap-3 mt-2'>
+          <div className='flex justify-center gap-3 mt-2'>
           <GoogleIcon  sx={{ color: pink[600] }} />
           <FacebookIcon  sx={{ color: pink[600] }}/>
           <LinkedInIcon  sx={{ color: pink[600] }}/>

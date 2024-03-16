@@ -53,8 +53,8 @@ export default function LogIn() {
         </div>
         <div className='mt-1 text-center '>
              Need an account? 
-             <Link to={"/Singup"}>Singup</Link>
-             
+             <Link to={"/Singup"} className='pl-1 underline'> SIGN UP
+              </Link>
         </div>
         </div>
     </div>
