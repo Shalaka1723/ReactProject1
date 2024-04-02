@@ -36,7 +36,7 @@ export default function ForgotP() {
 
         <div className='mt-1 text-center '>
             Go Back. 
-            <Link to={"/"} className='pl-1 underline'> LOGIN
+            <Link to={"/LogIn"} className='pl-1 underline'> LOGIN
               </Link>
         </div>
         </div>

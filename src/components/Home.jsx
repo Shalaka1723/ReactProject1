@@ -16,15 +16,22 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Home() {
+const[abc,setAbc] = useState(1)  
+ 
   return (
     <>
       <Navbar />
 
       <div className="text-white self-center">
-        <img
+        { abc? <img
           src={cclbg1}
           className=" h-[720px] w-full relative top-0 brightness-[0.25]  "
         />
+        :
+        <img
+          src={cclbg2}
+          className=" h-[720px] w-full relative top-0 brightness-[0.25]  "
+        /> }
 
         <div className=" absolute text-center inset-60 ">
           <hr className="w-14 mx-auto mb-8 border-4 border-yellow-400 " />
@@ -97,8 +104,8 @@ export default function Home() {
       </div>
 
       <div className="flex flex-row mt-20 ">
-        <div className="bg-yellow-400 place-content-center p-10 pr-50 flex flex-col gap-10  content-center">
-          <div>
+        <div className="bg-yellow-400 w-2/6 place-content-center p-10 pr-50 flex flex-col gap-10  content-center">
+          <div >
             <KeyboardDoubleArrowRightIcon
               className="float-left "
               sx={{ fontSize: 60, color: "white" }}
@@ -136,7 +143,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" flex flex-col ">
+        <div className=" flex flex-col w-4/6">
           <div className="bg-gray-100 p-28 pb-32 ">
             <h1 className=" font-bold text-4xl">
               No Project Too Big Or Too Small
@@ -177,7 +184,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-white self-center relative">
+      <div className="text-white  self-center relative">
         
         <img
           src={cclbg2}
@@ -248,8 +255,10 @@ export default function Home() {
             <h1 className="font-semibold"> John Smith</h1>
           </div>
         </div>
-        
-        <img src={Clients} className="m-10 object-cover self-center" width={1000} />
+        <div className="p-20">
+          
+        <img src={Clients} className=" object-cover self-center w-full" />
+        </div>
       </div>
 
       <Footer />
