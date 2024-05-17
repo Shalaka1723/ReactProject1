@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-export default function Navbar() {
+export default function Navbar(props) {
+  console.log(props)
   return (
     <>
       
@@ -10,7 +11,7 @@ export default function Navbar() {
         <header className='top-0  '>
         
           <nav className=' bg-white flex justify-between items-center p-1.7 pt-4 pb-4 text-center'>
-            <div className='text-xl text-black font-bold'><h1>Construction Company Landing</h1> </div>
+            <div className='text-xl text-black font-bold'><h1>Construction Company Landing {props.props} </h1> </div>
             <div className='flex '>
               <ul className='flex text-black items-center pr-3 font-semibold text-sm '>
                 <li className='text-sm pr-8'>Project</li>

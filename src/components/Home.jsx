@@ -18,9 +18,11 @@ import Footer from "./Footer";
 export default function Home() {
 const[abc,setAbc] = useState(1)  
  
+const jkl = "Hello"
+
   return (
     <>
-      <Navbar />
+      <Navbar props={jkl} />
 
       <div className="text-white self-center">
         { abc? <img
@@ -35,7 +37,7 @@ const[abc,setAbc] = useState(1)
 
         <div className=" absolute text-center inset-60 ">
           <hr className="w-14 mx-auto mb-8 border-4 border-yellow-400 " />
-          <h1 className=" text-6xl font-bold">Construction Inc</h1>
+          <h1 className=" text-6xl font-bold"> {jkl} </h1>
           <p className="text-xl p-16">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             lectus erat consectetur eu sapien eget, rhoncus consectetur sem.
