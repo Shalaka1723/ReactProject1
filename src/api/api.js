@@ -18,7 +18,19 @@ import axios from "axios";
 }
 
 
-let contactApi = () => {}
+let contactApi = async (name, email, message) => {
+
+    const cEntry = "http://localhost:4000/contact"
+
+    let call = await axios.post(
+        cEntry,
+        {
+            userName: name,
+            userEmal: email,
+            userMessage: message
+        },
+    )
+}
 
 export default signupApi;
 

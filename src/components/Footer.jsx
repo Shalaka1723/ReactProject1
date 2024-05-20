@@ -13,6 +13,10 @@ const [name,setName] = useState("")
 const [email,setEmail] = useState("")
 const [message,setMessage] = useState("")
 
+let handleSend=()=>{
+  contactApi(name, email, message)
+}
+
   return (
     <>
         
@@ -41,10 +45,9 @@ const [message,setMessage] = useState("")
 
               </div>
               <div className="ml-96">
-                <button
-                  type="submit"
-                  className="bg-yellow-500 border-white text-white border-4 mt-6  px-8 py-1 text-base font-bold ml-2 mb-6">
-                  {" "}
+                <button onClick={()=>{handleSend()}}
+                  type="submit" 
+                  className="bg-yellow-500 border-white text-white border-4 mt-6  px-8 py-3 text-base font-bold ml-2 mb-6">
                   SEND MESSAGE
                 </button>
               </div>
