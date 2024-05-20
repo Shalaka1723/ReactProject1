@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,6 +8,11 @@ import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function Footer() {
+
+const [name,setName] = useState("")
+const [email,setEmail] = useState("")
+const [message,setMessage] = useState("")
+
   return (
     <>
         
@@ -20,21 +25,25 @@ export default function Footer() {
               </div>
               <div className="bg-black inline-block w-16 mt-4 mb-4 rounded-lg h-2"></div>
               <div className="grid grid-cols-2 gap-4 ">
-                <div className="w-72 bg-white h-14">
-                  <h3 className="mt-4 ml-4">Name</h3>
+                <div>
+                  <h1>Name</h1>
+                  <input value={name} onChange={(e)=>{setName(event.target.value)}} placeholder='Enter name' className='py-2 px-4 '/>
+                </div> 
+                <div>
+                  <h1>Email</h1>
+                  <input value={email} onChange={(e)=>{setEmail(event.target.value)}} placeholder='Enter email' className='py-2 px-4 '/>
+                </div> 
+                
+                <div>
+                  <h1>Message</h1>
+                  <input value={message} onChange={(e)=>{setMessage(event.target.value)}} placeholder='Type your message' className=' h-auto w-full p-2'/>
                 </div>
-                <div className="w-72 ml-1 bg-white h-14">
-                  <h3 className="mt-4 ml-4">Email</h3>
-                </div>
-                <div className=" bg-white h-48 col-span-3">
-                  <h3 className="mt-4 ml-4">Message</h3>
-                </div>
+
               </div>
               <div className="ml-96">
                 <button
                   type="submit"
-                  className="bg-yellow-500 border-white text-white border-4 mt-6  px-8 py-1 text-base font-bold ml-2 mb-6"
-                >
+                  className="bg-yellow-500 border-white text-white border-4 mt-6  px-8 py-1 text-base font-bold ml-2 mb-6">
                   {" "}
                   SEND MESSAGE
                 </button>
