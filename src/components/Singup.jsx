@@ -4,7 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { pink } from '@mui/material/colors';
 import { Link } from 'react-router-dom';
-import signupApi from '../api/api'
+import {signupApi} from '../api/api'                      
 export default function Singup() {
 
 const [email,setEmail] = useState("")

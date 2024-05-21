@@ -6,6 +6,7 @@ import { yellow } from '@mui/material/colors';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import {contactApi} from '../api/api'
 
 export default function Footer() {
 
@@ -29,18 +30,20 @@ let handleSend=()=>{
               </div>
               <div className="bg-black inline-block w-16 mt-4 mb-4 rounded-lg h-2"></div>
               <div className="grid grid-cols-2 gap-4 ">
+
                 <div>
                   <h1>Name</h1>
-                  <input value={name} onChange={(e)=>{setName(event.target.value)}} placeholder='Enter name' className='py-2 px-4 '/>
+                  <input value={name} onChange={(e)=>{setName(e.target.value)}} placeholder='Enter name' className='py-2 px-4 '/>
                 </div> 
+
                 <div>
                   <h1>Email</h1>
-                  <input value={email} onChange={(e)=>{setEmail(event.target.value)}} placeholder='Enter email' className='py-2 px-4 '/>
+                  <input value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter email' className='py-2 px-4 '/>
                 </div> 
                 
                 <div>
                   <h1>Message</h1>
-                  <input value={message} onChange={(e)=>{setMessage(event.target.value)}} placeholder='Type your message' className=' h-auto w-full p-2'/>
+                  <input value={message} onChange={(e)=>{setMessage(e.target.value)}} placeholder='Type your message' className=' h-auto w-full p-2'/>
                 </div>
 
               </div>
